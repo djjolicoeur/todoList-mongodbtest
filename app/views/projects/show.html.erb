@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+<p>
+  <b>Priority:</b>
+  <%= @project.priority %>
+</p>
+<% html = @project.description
+   text_obj = RedCloth.new(html)
+%>
+
+<p>
+  <%=raw  text_obj.to_html %>
+</p>
+
+<h2>Tasks for <%=@project.name %></h2>
+
+
+
+
+  <% @project.tasks.each do |task| %>
+
+        <p><%= link_to task.name, task %></p>
+
+  <% end %>
+
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>  |
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
