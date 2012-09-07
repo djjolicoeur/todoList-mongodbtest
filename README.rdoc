@@ -9,20 +9,20 @@ production ready App, so don't judge to harshly!
 == Getting Started
 
 1. At the command prompt, pull down the app from repo:
-       <tt>git clone git@github.com:djjolicoeur/todoList-mongodbtest.git</tt> 
+       git clone git@github.com:djjolicoeur/todoList-mongodbtest.git
 
 2. Change directory to <tt>todoList-mongodbtest</tt>:
-       <tt>cd todoList-mongodbtest</tt> 
+       cd todoList-mongodbtest 
       
 3. Install bundled dependencies:
-      <tt>bundle install</tt>
+      bundle install
 
 4. make sure MongoDB is installed, running, and available
-    on localhost. For more on MongoDB and installation, see
-    http://www.mongodb.org/display/DOCS/Quickstart
+   on localhost. For more on MongoDB and installation, see
+      http://www.mongodb.org/display/DOCS/Quickstart
     
 5. From directory todoList-mongodbtest, start the server:
-    <tt>rails s</tt>
+      rails s
     
 
 6. Go to http://localhost:3000/projects and you'll 
